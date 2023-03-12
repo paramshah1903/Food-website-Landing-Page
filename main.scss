@@ -1,0 +1,79 @@
+@import "animations";
+@import "modal";
+@import "form";
+@import "navigation";
+.header {
+  height: 95vh;
+  background-image: url(img/food4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  clip-path: polygon(0.2% 0%, 100% 0%, 100% 78.8%, 0% 100%);
+  position: relative;
+  &__text-box {
+    background-blend-mode: screen;
+    position: absolute;
+    top: 27rem;
+    left: 50rem;
+    display: inline-block;
+    text-align: center;
+  }
+  &__heading-primary {
+    color: #202020;
+    // color: transparent;
+    text-transform: uppercase;
+    line-height: 1.4;
+    &-main {
+      display: block;
+      font-size: 5rem;
+      animation-name: moveInLeft;
+      animation-duration: 3s;
+      backface-visibility: hidden;
+    }
+
+    &-sub {
+      display: block;
+      font-weight: 300;
+      font-size: 2.85rem;
+      animation-name: moveInRight;
+      animation-duration: 3s;
+      backface-visibility: hidden;
+    }
+  }
+  &__button {
+    background-color: black;
+    color: #f3f4f6;
+    border-radius: 3rem;
+    font-size: 1.8rem;
+    padding: 1rem 2.5rem;
+    position: absolute;
+    left: 59rem;
+    top: 44rem;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    animation-name: moveInUp;
+    animation-duration: 3s;
+    backface-visibility: hidden;
+    // box-shadow: ;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0.5rem 4rem gray;
+      transform: scale(1.2);
+    }
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  padding: 3rem;
+  background-color: #f3f4f6;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}

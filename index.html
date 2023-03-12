@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/c5d31dd68f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/c5d31dd68f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <div class="navigation__icon">
+        <i class="fa-solid fa-bars navigation__btn"></i>
+      </div>
+      <div class="navigation__background hidden">
+        <div class="navigation__list-box">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link"
+                ><i class="fa-solid fa-house"></i> About us</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">
+                <i class="fa-sharp fa-solid fa-plus"></i> Your Benefits</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">
+                <i class="fa-solid fa-book-open-reader"></i> Menu</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">
+                <i class="fa-solid fa-pizza-slice"></i> Popular dishes</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">
+                <i class="fa-solid fa-face-smile"></i> user reviews</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">
+                <i class="fa-solid fa-phone"></i> order now</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header__text-box">
+        <h2 class="header__heading-primary">
+          <span class="header__heading-primary-main"> good food <br /> </span>
+          <span class="header__heading-primary-sub">
+            is the foundation <br />
+          </span>
+          <span class="header__heading-primary-sub">
+            of geniuine happiness <br />
+          </span>
+        </h2>
+      </div>
+      <button class="header__button">Order Now!</button>
+    </header>
+    <div class="modal__form hidden">
+      <div class="modal__form--close-button close-btn">
+        <i class="fa-solid fa-xmark fa-2x"></i>
+      </div>
+      <div class="modal__form-heading-box">
+        <div class="modal__form-heading-content">
+          <h2>Login before you start!</h2>
+        </div>
+      </div>
+      <form action="#" class="form">
+        <div class="form__group">
+          <label for="fullname" class="form__label">Username:</label>
+          <input
+            style="font-family: 'fontawesome'; font-weight: 300"
+            type="text"
+            id="fullname"
+            class="form__input"
+            placeholder="&#xf007;   "
+            required
+          />
+        </div>
+        <div class="form__group">
+          <label for="mobile" class="form__label">Mobile Number:</label>
+          <input
+            style="font-family: 'fontawesome'; font-weight: 300"
+            type="text"
+            id="mobile"
+            class="form__input"
+            placeholder=" &#xe527;   "
+            required
+          />
+        </div>
+        <div class="form__group">
+          <label for="email" class="form__label"> Email:</label>
+          <input
+            style="font-family: 'fontawesome'; font-weight: 300"
+            type="email"
+            id="email"
+            class="form__input"
+            placeholder="&#xf0e0;   "
+            required
+          />
+        </div>
+        <div class="form__group">
+          <label for="password" class="form__label"> Password:</label>
+          <input
+            style="font-family: 'fontawesome'; font-weight: 300"
+            type="password"
+            id="password"
+            class="form__input"
+            placeholder="&#xf023;   "
+            required
+          />
+        </div>
+        <div class="form__group">
+          <input type="submit" class="form__submit-btn" value="Login" />
+        </div>
+      </form>
+    </div>
+
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

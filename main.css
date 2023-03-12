@@ -1,0 +1,413 @@
+@-webkit-keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-12rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: 0;
+  }
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-12rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: 0;
+  }
+}
+@-webkit-keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(12rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: 0;
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(12rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: 0;
+  }
+}
+@-webkit-keyframes moveInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(12rem);
+  }
+  80% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: 0;
+  }
+}
+@keyframes moveInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(12rem);
+  }
+  80% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: 0;
+  }
+}
+@-webkit-keyframes drop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes drop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeout {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -300px;
+    opacity: 0;
+  }
+}
+@keyframes fadeout {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -300px;
+    opacity: 0;
+  }
+}
+.modal__form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 30rem;
+  background-color: white;
+  z-index: 10;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 2rem 3rem;
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, white 42%, rgba(0, 0, 0, 0) 42%), url(img/food6.jpg);
+  background-size: cover;
+  height: 55rem;
+  background-size: 100%;
+  background-size: cover;
+}
+.modal__form--close-button {
+  position: absolute;
+  top: 0;
+  right: 0.3rem;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.2s;
+}
+.modal__form--close-button:hover {
+  font-size: 2rem;
+  color: black;
+}
+.modal__form-heading-box {
+  margin-top: 2.75rem;
+  margin-left: 1rem;
+}
+.modal__form-heading-content {
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #16a085, #f4d03f);
+  display: inline-block;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+  transition: all 0.4s;
+}
+.modal__form-heading-content:hover {
+  transform: skewX(7deg) skewY(15deg) scale(1.1);
+}
+
+.overlay {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.hidden {
+  display: none;
+}
+
+.animate {
+  -webkit-animation-name: drop;
+          animation-name: drop;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.form__group {
+  margin: 3rem;
+}
+.form__input {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-bottom: 1px solid #000;
+  background-color: #fafaf9;
+  width: 32%;
+  text-transform: lowercase !important;
+}
+.form__input:focus {
+  outline: none;
+  border-bottom: 3px solid green;
+  box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.5);
+}
+.form__label {
+  display: block;
+  font-style: inherit;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.form__submit-btn {
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  width: 15%;
+  margin-top: 2.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  background-image: linear-gradient(to right, #43c6ac, #f8ffae);
+  transition: all 0.2s;
+}
+.form__submit-btn:hover {
+  box-shadow: 0rem 1rem 4rem rgba(0, 0, 0, 0.5);
+  transform: translateX(3px);
+}
+.form__icon {
+  color: #000;
+  height: 5px;
+  width: 5px;
+  z-index: 100;
+}
+.form ::-moz-placeholder {
+  text-transform: lowercase;
+}
+.form :-ms-input-placeholder {
+  text-transform: lowercase;
+}
+.form ::placeholder {
+  text-transform: lowercase;
+}
+
+::-webkit-input-placeholder {
+  color: black;
+  text-transform: lowercase;
+  font-family: inherit;
+}
+
+.navigation__icon {
+  display: inline-block;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  background-color: #353b48;
+  position: relative;
+  position: absolute;
+  top: 6.5rem;
+  right: 5.6rem;
+  z-index: 1;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.navigation__icon:hover {
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5);
+  transform: scale(1.2);
+}
+.navigation__btn {
+  transform: translateX(4px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: #f7f7f7;
+}
+.navigation__background {
+  background-image: linear-gradient(to right, #aaffa9, #11ffbd);
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.navigation__list-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.navigation__link {
+  text-decoration: none;
+  color: #44403c;
+  font-size: 4rem;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+}
+.navigation__list {
+  list-style-type: none;
+}
+.navigation__item {
+  padding: 1.5rem;
+  position: relative;
+  margin-bottom: 0.75rem;
+}
+.navigation__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  transform: scaleY(0);
+  transition: transform 1s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s;
+  z-index: 1;
+}
+.navigation__item:hover::before {
+  transform: scaleY(1);
+  width: 100%;
+}
+
+.fadeout {
+  -webkit-animation-name: fadeout;
+          animation-name: fadeout;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.header {
+  height: 95vh;
+  background-image: url(img/food4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  -webkit-clip-path: polygon(0.2% 0%, 100% 0%, 100% 78.8%, 0% 100%);
+          clip-path: polygon(0.2% 0%, 100% 0%, 100% 78.8%, 0% 100%);
+  position: relative;
+}
+.header__text-box {
+  background-blend-mode: screen;
+  position: absolute;
+  top: 27rem;
+  left: 50rem;
+  display: inline-block;
+  text-align: center;
+}
+.header__heading-primary {
+  color: #202020;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+.header__heading-primary-main {
+  display: block;
+  font-size: 5rem;
+  -webkit-animation-name: moveInLeft;
+          animation-name: moveInLeft;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.header__heading-primary-sub {
+  display: block;
+  font-weight: 300;
+  font-size: 2.85rem;
+  -webkit-animation-name: moveInRight;
+          animation-name: moveInRight;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.header__button {
+  background-color: black;
+  color: #f3f4f6;
+  border-radius: 3rem;
+  font-size: 1.8rem;
+  padding: 1rem 2.5rem;
+  position: absolute;
+  left: 59rem;
+  top: 44rem;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  -webkit-animation-name: moveInUp;
+          animation-name: moveInUp;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.header__button:hover {
+  cursor: pointer;
+  box-shadow: 0 0.5rem 4rem gray;
+  transform: scale(1.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  padding: 3rem;
+  background-color: #f3f4f6;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}/*# sourceMappingURL=main.css.map */
